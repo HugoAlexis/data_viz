@@ -19,7 +19,7 @@ pattern_t3 = re.compile(r'Core 2:\s*\+([\d.]+)\s*°C')
 pattern_t4 = re.compile(r'Core 3:\s*\+([\d.]+)\s*°C')
 
 
-with open('../../Downloads/cpu_temp_log_full.txt') as f:
+with open('cpu_temp_log_full.txt') as f:
     file_content = ''.join(f.read()).strip()
 items = file_content.split('---------------------------------')
 
